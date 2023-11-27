@@ -28,7 +28,7 @@ body {
 
 @layer components {
   .blue-link {
-    @apply font-bold underline hover:text-cyan-500 border hover:border hover:border-cyan-500 hover:rounded;
+    @apply font-bold underline hover:text-cyan-500 border border-transparent hover:border hover:border-cyan-500 hover:rounded;
   }
   .circular-image {
     @apply rounded-full;
