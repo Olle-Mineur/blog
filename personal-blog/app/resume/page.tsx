@@ -62,10 +62,10 @@ export default function Page() {
                         <p className="text-sm mt-1">
                             Technologies: Next.js, TypeScript, Tailwind CSS, Appwrite, Cloudflare CDN
                         </p>
-                        <Link href="https://rumfastighet.se/" className="blue-link">Link to website</Link>
+                        <Link href="https://rumfastighet.se/" className="text-sm blue-link">Link to website</Link>
                     </div>
                     <div className="pl-4 my-2">
-                        <h2 className="font-bold">Freelance Web developer @ <span lang="sv" className="underline">Oskarshamns Gästhamn</span></h2>
+                        <h2 className="font-bold">Freelance Web developer @ Oskarshamns Gästhamn</h2>
                         <p className="text-sm font-bold">
                             Worked: 2021
                         </p>
@@ -76,7 +76,7 @@ export default function Page() {
                         <p className="text-sm mt-1">
                             Technologies: HTML, CSS, Cloudflare CDN
                         </p>
-                        <Link href="https://oskarshamnsgasthamn.se/" className="blue-link">Link to website</Link>
+                        <Link href="https://oskarshamnsgasthamn.se/" className="text-sm blue-link">Link to website</Link>
                     </div>
                     <div className="pl-4 my-2">
                         <h2 className="font-bold">Caretaker @ Rum Fastighet</h2>
@@ -99,7 +99,7 @@ export default function Page() {
                         <p className="text-sm mt-1">
                             Technologies: React, Gatsby, Django, Docker, Nginx, Wordpress, Cloudflare CDN
                         </p>
-                        <Link href="https://d-sektionen.se/" className="blue-link">Link to website</Link>
+                        <Link href="https://d-sektionen.se/" className="text-sm blue-link">Link to website</Link>
                     </div>
                     <div className="pl-4 my-2">
                         <h2 className="font-bold">ElWerk @ D-LAN</h2>
