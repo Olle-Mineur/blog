@@ -22,7 +22,7 @@ export default function Page() {
                             This is my personal blog, where I write about things I find interesting.
                         </p>
                         <p className="text-sm">
-                            It is built with Next.js and Tailwind CSS.
+                            It is built with Next.js and Tailwind CSS. Hosted with Cloudflare Pages.
                         </p>
                         <p className="text-sm">
                             The source code can be found <a href="https://github.com/Olle-Mineur/Blog" className="blue-link">here</a>.

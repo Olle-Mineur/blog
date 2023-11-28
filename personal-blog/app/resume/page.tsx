@@ -4,8 +4,8 @@ import Link from 'next/link'
 import Footer from '@/components/footer/Footer'
 
 export const metadata: Metadata = {
-    title: 'About me',
-    description: 'About Olle Mineur',
+    title: 'Resume',
+    description: 'Olle Mineur\'s resume',
 }
 
 function getStudyYear() {
