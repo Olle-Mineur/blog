@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '@/components/footer/Footer'
 
 export const metadata: Metadata = {
     title: 'About me',
@@ -79,14 +80,18 @@ export default function Page() {
                         <Link href="https://oskarshamnsgasthamn.se/" className="text-sm blue-link">Link to website</Link>
                     </div>
                     <div className="pl-4 my-2">
-                        <h2 className="font-bold">Caretaker @ Rum Fastighet</h2>
+                        <h2 className="font-bold">Caretaker / Carpenter @ Rum Fastighet</h2>
                         <p className="text-sm font-bold">
                             Worked: Summers between 2017 - 2023
                         </p>
                         <p className="text-sm">
                             Worked with taking care of the properties owned by Rum Fastighet. This included everything from cleaning to fixing things that were broken.
+                            <br/> Also helped with carpentry work when needed, for example when renovating apartments or smaller things like changing windows.
                         </p>
                     </div>
+                </div>
+                <div className="my-2">
+                    <h1 className="font-bold ">Student Organizations</h1>
                     <div className="pl-4 my-2">
                         <h2 className="font-bold">Webmaster @ Datateknologsektionen</h2>
                         <p className="text-sm font-bold">
@@ -143,6 +148,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </main>
     )
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Footer from '@/components/footer/Footer'
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -70,6 +71,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </main>
     )
 }

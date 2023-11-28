@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '@/components/footer/Footer'
 
 export default function Home() {
   return (
@@ -11,14 +12,9 @@ export default function Home() {
         <h2 className="my-4 font-bold">About me:</h2>
         <p className="my-4">
           Currently I am a student at Linköping University studying <Link className="blue-link" href="https://liu.se/en/education/program/6cddd">Master of Science in Computer Science and Engineering</Link>.
+        <br/> This is my personal website where I will post about my projects and other things I find interesting.
+        <br/> You can also find my resume <Link className="blue-link" href="/resume">here</Link>.
         </p>
-      </div>
-      <div className="my-4 flex flex-wrap flex-col">
-        <h2 className="flex-auto font-bold">Links:</h2>
-        <div className="flex text-center">
-          <Link href="https://github.com/Olle-Mineur" className="flex-auto blue-link">Github</Link>
-          <Link href="https://www.linkedin.com/in/olle-mineur/" className="flex-auto blue-link">LinkedIn</Link>
-        </div>
       </div>
       <div className="my-4 flex flex-wrap flex-col content-center">
         <Image
@@ -29,6 +25,7 @@ export default function Home() {
           height={300}
           priority/>
       </div>
+      <Footer/>
     </main>
   )
 }
