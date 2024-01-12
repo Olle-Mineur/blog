@@ -52,6 +52,15 @@ export default function Page() {
             <div className="flex flex-wrap flex-col">
                 <div className="my-2">
                 <h1 className="font-bold ">Work Experience</h1>
+                <div className="pl-4 my-2">
+                        <h2 className="font-bold">Student Employee @ Linköpings universitet</h2>
+                        <p className="text-sm font-bold">
+                            Worked: November 2023 - Present
+                        </p>
+                        <p className="text-sm">
+                        Student assistant at the Digitaliseringsavdelningen, within the Digitala resursenheten team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I work in a team of approximately 10 people to cover all the work.
+                        </p>
+                    </div>
                     <div className="pl-4 my-2">
                         <h2 className="font-bold">Web developer @ Rum Fastighet</h2>
                         <p className="text-sm font-bold">
@@ -80,7 +89,7 @@ export default function Page() {
                         <Link href="https://oskarshamnsgasthamn.se/" className="text-sm blue-link">Link to website</Link>
                     </div>
                     <div className="pl-4 my-2">
-                        <h2 className="font-bold">Caretaker / Carpenter @ Rum Fastighet</h2>
+                        <h2 className="font-bold">Property Manager / Carpenter @ Rum Fastighet</h2>
                         <p className="text-sm font-bold">
                             Worked: Summers between 2017 - 2023
                         </p>
