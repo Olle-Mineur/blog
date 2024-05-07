@@ -8,9 +8,12 @@ Meanwhile you can read about my projects and you can also find my resume there.
 # Technologies
 
 ## Using currently
+
 - Next.js
+- Million.js
 - Tailwind CSS
 - Cloudflare Pages
 
 ## Planned
+
 - Strapi (Or some CMS for the blog)

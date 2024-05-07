@@ -8,6 +8,17 @@ export const metadata: Metadata = {
     description: 'Olle Mineur\'s resume',
 }
 
+interface knowledgeList {
+    name: string;
+    technologies: technologies[];
+}
+
+interface technologies {
+    name: string;
+    image?: string;
+    darkImage?: string;
+}
+
 function getStudyYear() {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth() + 1; // Adding 1 to get the current month
@@ -34,6 +45,146 @@ function getStudyYear() {
 
 
 export default function Page() {
+    const favoriteProgrammingLanguages: technologies[] = [
+        {
+            name: "TypeScript",
+            image: "https://skillicons.dev/icons?i=ts&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=ts&theme=dark"
+        },
+        {
+            name: "Python",
+            image: "https://skillicons.dev/icons?i=python&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=python&theme=dark"
+        },
+    ]
+
+    const otherProgramming: technologies[] = [
+        {
+            name: "JavaScript",
+            image: "https://skillicons.dev/icons?i=js&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=js&theme=dark"
+        },
+        {
+            name: "Java",
+            image: "https://skillicons.dev/icons?i=java&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=java&theme=dark"
+        },
+        {
+            name: "C",
+            image: "https://skillicons.dev/icons?i=c&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=c&theme=dark"
+        },
+        {
+            name: "C++",
+            image: "https://skillicons.dev/icons?i=cpp&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=cpp&theme=dark"
+        },
+        {
+            name: "VHDL"
+        },
+    ]
+
+    const clientKnowledge: technologies[] = [
+        {
+            name: "React",
+            image: "https://skillicons.dev/icons?i=react&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=react&theme=dark"
+        },
+        {
+            name: "Next.js",
+            image: "https://skillicons.dev/icons?i=nextjs&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=nextjs&theme=dark"
+        },
+        {
+            name: "Gatsby",
+            image: "https://skillicons.dev/icons?i=gatsby&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=gatsby&theme=dark"
+        },
+        {
+            name: "Tailwind",
+            image: "https://skillicons.dev/icons?i=tailwind&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=tailwind&theme=dark"
+        },
+        {
+            name: "Figma",
+            image: "https://skillicons.dev/icons?i=figma&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=figma&theme=dark"
+        },
+        {
+            name: "CSS",
+            image: "https://skillicons.dev/icons?i=css&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=css&theme=dark"
+        },
+        {
+            name: "HTML",
+            image: "https://skillicons.dev/icons?i=html&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=html&theme=dark"
+        },
+        {
+            name: "Wordpress",
+            image: "https://skillicons.dev/icons?i=wordpress&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=wordpress&theme=dark"
+        }
+    ]
+
+    const serverKnowledge: technologies[] = [
+        {
+            name: "Node.js",
+            image: "https://skillicons.dev/icons?i=nodejs&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=nodejs&theme=dark"
+        },
+        {
+            name: "Django",
+            image: "https://skillicons.dev/icons?i=django&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=django&theme=dark"
+        },
+        {
+            name: "Selenium",
+            image: "https://skillicons.dev/icons?i=selenium&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=selenium&theme=dark"
+        },
+        {
+            name: "Appwrite",
+            image: "https://skillicons.dev/icons?i=appwrite&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=appwrite&theme=dark"
+        },
+        {
+            name: "Docker",
+            image: "https://skillicons.dev/icons?i=docker&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=docker&theme=dark"
+        },
+        {
+            name: "Nginx",
+            image: "https://skillicons.dev/icons?i=nginx&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=nginx&theme=dark"
+        },
+        {
+            name: "Cloudflare",
+            image: "https://skillicons.dev/icons?i=cloudflare&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=cloudflare&theme=dark"
+        },
+        {
+            name: "RaspberryPI",
+            image: "https://skillicons.dev/icons?i=raspberrypi&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=raspberrypi&theme=dark"
+        }
+    ]
+
+    const knowledgeGroups: knowledgeList[] = [
+        {
+            name: "Client knowledge",
+            technologies: clientKnowledge
+        },
+        {
+            name: "Server knowledge",
+            technologies: serverKnowledge
+        },
+        {
+            name: "Other programming languages",
+            technologies: otherProgramming
+        }
+    ]
+
     return (
         <main className="flex flex-wrap flex-col content-center font-mono my-4">
             <div className="flex flex-row">
@@ -47,10 +198,54 @@ export default function Page() {
                 <h1 className="font-bold text-left my-auto">
                     Olle Mineur
                     <br/><span className="font-light">Student @ Linköping University</span>
+                    <br/><span className="font-dark text-xs">Favorite Languages: </span>
+                    <div className="flex flex-row flex-wrap">
+                        {favoriteProgrammingLanguages.map((technology, techIndex) => (
+                            technology.image? (
+                                <picture key={techIndex}>
+                                    <source srcSet={technology.darkImage} media="(prefers-color-scheme: dark)" />
+                                    <Image
+                                    className="mr-2 mb-2"
+                                    src={technology.image}
+                                    alt={technology.name}
+                                    width={30}
+                                    height={30}
+                                    priority/>
+                                </picture>
+                            ) :
+                            <p key={techIndex} className="text-sm font-bold">{technology.name}</p>
+                        ))}
+                    </div>
                 </h1>
             </div>
             <div className="flex flex-wrap flex-col">
                 <div className="my-2">
+                <div className="flex flex-col my-2">
+                    <h1 className="font-bold">Skills</h1>
+                    {knowledgeGroups.map((knowledgeGroup, groupIndex) => (
+                        <div className="m-2" key={groupIndex}>
+                            <p className="font-bold text-sm">{knowledgeGroup.name}:</p>
+                            <div className="flex flex-row flex-wrap gap-x-8 items-center align-middle content-center">
+                                {knowledgeGroup.technologies.map((technology, techIndex) => (
+                                    technology.image? (
+                                        <picture key={techIndex} className="group my-1 w-[50px] h-[50px]">
+                                            <p className="opacity-0 group-hover:opacity-100 text-center text-xs font-bold text-nowrap">{technology.name}</p>
+                                            <source srcSet={technology.darkImage} media="(prefers-color-scheme: dark)" />
+                                            <Image
+                                            className="mx-auto"
+                                            src={technology.image}
+                                            alt={technology.name}
+                                            width={30}
+                                            height={30}
+                                            priority/>
+                                        </picture>
+                                    ) :
+                                    <p key={techIndex} className="text-sm font-bold">{technology.name}</p>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
                 <h1 className="font-bold ">Work Experience</h1>
                 <div className="pl-4 my-2">
                         <h2 className="font-bold">Student Employee @ Linköpings universitet</h2>
@@ -124,6 +319,17 @@ export default function Page() {
                             Working with the electricity at D-LAN, a LAN party in Linköping.
                             Also took care of logistics at the event.
                         </p>
+                    </div>
+                    <div className="pl-4 my-2">
+                        <h2 className="font-bold">Kitchen Worker @ VilleValla Pub</h2>
+                        <p className="text-sm font-bold">
+                            Worked: March 2024 - Present
+                        </p>
+                        <p className="text-sm">
+                            Working in the kitchen at VilleValla Pub, a student pub in Linköping.
+                            Wanted to try something new and decided to start at VilleValla as a Kitchen Worker. 
+                        </p>
+                        <Link href="https://www.villevallapub.se/" className="text-sm blue-link">Link to website</Link>
                     </div>
                 </div>
                 <div className="my-4">

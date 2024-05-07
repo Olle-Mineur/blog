@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-wrap flex-col content-center h-full min-h-screen max-w-full bg-gradient-to-r from-gray-100 to-gray-300 dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-900 dark:to-black dark:text-gray-100">
           <Nav/>
-          <div className="min-h-screen w-3/5 mx-auto">
+          <div className="min-h-screen w-4/5 lg:w-3/5 mx-auto">
           {children}
           </div>
         </div>

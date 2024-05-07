@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Footer from '@/components/footer/Footer'
 
 export default function Home() {
+
   return (
     <main className="flex flex-wrap flex-col content-center font-mono my-4">
       <div className="my-4">
@@ -15,6 +16,7 @@ export default function Home() {
         <br/> This is my personal website where I will post about my projects and other things I find interesting.
         <br/> You can also find my resume <Link className="blue-link" href="/resume">here</Link>.
         </p>
+
       </div>
       <div className="my-4 flex flex-wrap flex-col content-center">
         <Image
