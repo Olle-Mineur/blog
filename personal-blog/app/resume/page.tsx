@@ -253,7 +253,7 @@ export default function Page() {
                             Worked: June 2024 - July 2024
                         </p>
                         <p className="text-sm">
-                        Team leader of a 5 group team at "Digitaliseringsavdelningen", within the "Digitala resursenheten" team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I was responsible for the team and the work we did. I also had to report to the project manager and make sure everything was done correctly.
+                        Team leader of a 5 group team at <span lang='sv' className="italic-text">Digitaliseringsavdelningen</span>, within the <span lang='sv' className="italic-text">Digitala resursenheten</span> team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I was responsible for the team and the work we did. I also had to report to the project manager and make sure everything was done correctly.
                         </p>
                     </div>
                     <div className="pl-4 my-2">
@@ -262,7 +262,7 @@ export default function Page() {
                             Worked: November 2023 - Present
                         </p>
                         <p className="text-sm">
-                        Student assistant at the "Digitaliseringsavdelningen", within the "Digitala resursenheten" team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I work in a team of approximately 10 people to cover all the work.
+                        Student assistant at the <span lang='sv' className="italic-text">Digitaliseringsavdelningen</span>, within the <span lang='sv' className="italic-text">Digitala resursenheten</span> team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I work in a team of approximately 10 people to cover all the work.
                         </p>
                     </div>
                     <div className="pl-4 my-2">

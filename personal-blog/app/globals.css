@@ -33,4 +33,7 @@ body {
   .circular-image {
     border-radius: 50%;
   }
+  .italic-text {
+    @apply italic;
+  }
 }
