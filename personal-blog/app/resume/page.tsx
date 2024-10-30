@@ -164,9 +164,9 @@ export default function Page() {
             darkImage: "https://skillicons.dev/icons?i=cloudflare&theme=dark"
         },
         {
-            name: "RaspberryPI",
-            image: "https://skillicons.dev/icons?i=raspberrypi&theme=light",
-            darkImage: "https://skillicons.dev/icons?i=raspberrypi&theme=dark"
+            name: "Linux",
+            image: "https://skillicons.dev/icons?i=linux&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=linux&theme=dark"
         }
     ]
 
@@ -247,13 +247,22 @@ export default function Page() {
                     ))}
                 </div>
                 <h1 className="font-bold ">Work Experience</h1>
-                <div className="pl-4 my-2">
+                    <div className="pl-4 my-2">
+                        <h2 className="font-bold">Team leader @ Linköpings universitet</h2>
+                        <p className="text-sm font-bold">
+                            Worked: June 2024 - July 2024
+                        </p>
+                        <p className="text-sm">
+                        Team leader of a 5 group team at "Digitaliseringsavdelningen", within the "Digitala resursenheten" team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I was responsible for the team and the work we did. I also had to report to the project manager and make sure everything was done correctly.
+                        </p>
+                    </div>
+                    <div className="pl-4 my-2">
                         <h2 className="font-bold">Student Employee @ Linköpings universitet</h2>
                         <p className="text-sm font-bold">
                             Worked: November 2023 - Present
                         </p>
                         <p className="text-sm">
-                        Student assistant at the Digitaliseringsavdelningen, within the Digitala resursenheten team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I work in a team of approximately 10 people to cover all the work.
+                        Student assistant at the "Digitaliseringsavdelningen", within the "Digitala resursenheten" team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I work in a team of approximately 10 people to cover all the work.
                         </p>
                     </div>
                     <div className="pl-4 my-2">
@@ -299,7 +308,24 @@ export default function Page() {
                     <div className="pl-4 my-2">
                         <h2 className="font-bold">Webmaster @ Datateknologsektionen</h2>
                         <p className="text-sm font-bold">
-                            Worked: April 2023 - Present
+                            Worked: April 2024 - Present
+                        </p>
+                        <p className="text-sm">
+                            Stayed as Webmaster for another year, had a lot of fun and wanted to continue working with the website.
+                            Working with the website for the Computer Science and Engineering student union at Linköping University.
+                            Also taking care of the servers and other technical things.
+                            This year I wanted to make our development process more efficient. More Docker and more automation.
+                            Also started to work more agile and with sprints.
+                        </p>
+                        <p className="text-sm mt-1">
+                            Technologies: React, Gatsby, Django, Docker, Nginx, Wordpress, Cloudflare CDN
+                        </p>
+                        <Link href="https://d-sektionen.se/" className="text-sm blue-link">Link to website</Link>
+                    </div>
+                    <div className="pl-4 my-2">
+                        <h2 className="font-bold">Webmaster @ Datateknologsektionen</h2>
+                        <p className="text-sm font-bold">
+                            Worked: April 2023 - June 2024
                         </p>
                         <p className="text-sm">
                             Working with the website for the Computer Science and Engineering student union at Linköping University.
@@ -319,15 +345,17 @@ export default function Page() {
                             Working with the electricity at D-LAN, a LAN party in Linköping.
                             Also took care of logistics at the event.
                         </p>
+                        <Link href="https://d-lan.se/" className="text-sm blue-link">Link to website</Link> 
                     </div>
                     <div className="pl-4 my-2">
-                        <h2 className="font-bold">Kitchen Worker @ VilleValla Pub</h2>
+                        <h2 className="font-bold">Chef & Bartender @ VilleValla Pub</h2>
                         <p className="text-sm font-bold">
                             Worked: March 2024 - Present
                         </p>
                         <p className="text-sm">
-                            Working in the kitchen at VilleValla Pub, a student pub in Linköping.
-                            Wanted to try something new and decided to start at VilleValla as a Kitchen Worker. 
+                            Started in the kitchen at VilleValla Pub, a student pub in Linköping.
+                            Wanted to try something new and decided to start at VilleValla.
+                            Works both in the kitchen and as a bartender.
                         </p>
                         <Link href="https://www.villevallapub.se/" className="text-sm blue-link">Link to website</Link>
                     </div>
@@ -342,6 +370,7 @@ export default function Page() {
                         <p className="text-sm">
                             Currently studying my {getStudyYear()} year of the program.
                         </p>
+                        <Link href="https://liu.se/en/education/program/6cddd" className="text-sm blue-link">Link to program</Link>
                     </div>
                     <div className="pl-4 my-2">
                         <h2 className="font-bold">Teknikprogrammet, inriktning informations- och medieteknik @ Oscarsgymnasiet</h2>
@@ -352,6 +381,7 @@ export default function Page() {
                             3 year program in High School. Focused on programming and web development.
                             Took extra courses in welding, CAD, and electricity.
                         </p>
+                        <Link href="https://www.oskarshamn.se/forskola-och-utbildning/oscarsgymnasiet/program/teknikprogrammet/" className="text-sm blue-link">Link to program</Link>
                     </div>
                 </div>
                 <div className="my-4">
