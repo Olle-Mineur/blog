@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer/Footer'
+import { Card, CardGrid } from '@/components/card/card'
 
 export const metadata: Metadata = {
     title: 'Resume',
@@ -246,17 +247,21 @@ export default function Page() {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className="my-4">
                 <h1 className="font-bold ">Work Experience</h1>
-                    <div className="pl-4 my-2">
+                <hr />
+                <CardGrid>
+                    <Card>
                         <h2 className="font-bold">Team leader @ Linköpings universitet</h2>
-                        <p className="text-sm font-bold">
+                        <p className="text-sm font-bold mb-2">
                             Worked: June 2024 - July 2024
                         </p>
                         <p className="text-sm">
                         Team leader of a 5 group team at <span lang='sv' className="italic-text">Digitaliseringsavdelningen</span>, within the <span lang='sv' className="italic-text">Digitala resursenheten</span> team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I was responsible for the team and the work we did. I also had to report to the project manager and make sure everything was done correctly.
                         </p>
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">Student Employee @ Linköpings universitet</h2>
                         <p className="text-sm font-bold">
                             Worked: November 2023 - Present
@@ -264,48 +269,51 @@ export default function Page() {
                         <p className="text-sm">
                         Student assistant at the <span lang='sv' className="italic-text">Digitaliseringsavdelningen</span>, within the <span lang='sv' className="italic-text">Digitala resursenheten</span> team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I work in a team of approximately 10 people to cover all the work.
                         </p>
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">Web developer @ Rum Fastighet</h2>
-                        <p className="text-sm font-bold">
+                        <p className="text-sm font-bold mb-2">
                             Worked: Summer 2023 - Present
                         </p>
                         <p className="text-sm">
                             Building a website for Rum Fastighet to show their properties and to make it easier for people to contact them.
                         </p>
-                        <p className="text-sm mt-1">
+                        <p className="text-sm my-2">
                             Technologies: Next.js, TypeScript, Tailwind CSS, Appwrite, Cloudflare CDN
                         </p>
                         <Link href="https://rumfastighet.se/" className="text-sm blue-link">Link to website</Link>
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">Freelance Web developer @ Oskarshamns Gästhamn</h2>
-                        <p className="text-sm font-bold">
+                        <p className="text-sm font-bold mb-2">
                             Worked: 2021
                         </p>
                         <p className="text-sm">
                             At the end of High School I got asked to make a website for the local guest harbour. The website was supposed to give information to guests.
                             Made in only HTML and CSS. Focused on simplicity and ease of use.
                         </p>
-                        <p className="text-sm mt-1">
+                        <p className="text-sm my-2">
                             Technologies: HTML, CSS, Cloudflare CDN
                         </p>
                         <Link href="https://oskarshamnsgasthamn.se/" className="text-sm blue-link">Link to website</Link>
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">Property Manager / Carpenter @ Rum Fastighet</h2>
-                        <p className="text-sm font-bold">
+                        <p className="text-sm font-bold mb-2">
                             Worked: Summers between 2017 - 2023
                         </p>
                         <p className="text-sm">
                             Worked with taking care of the properties owned by Rum Fastighet. This included everything from cleaning to fixing things that were broken.
                             <br/> Also helped with carpentry work when needed, for example when renovating apartments or smaller things like changing windows.
                         </p>
-                    </div>
-                </div>
-                <div className="my-2">
-                    <h1 className="font-bold ">Student Organizations</h1>
-                    <div className="pl-4 my-2">
+                    </Card>
+                </CardGrid>
+            </div>
+            <div className="my-4">
+                <h1 className="font-bold ">Student Organizations</h1>
+                <hr />
+                <CardGrid>
+                    <Card>
                         <h2 className="font-bold">Webmaster @ Datateknologsektionen</h2>
                         <p className="text-sm font-bold">
                             Worked: April 2024 - Present
@@ -321,8 +329,8 @@ export default function Page() {
                             Technologies: React, Gatsby, Django, Docker, Nginx, Wordpress, Cloudflare CDN
                         </p>
                         <Link href="https://d-sektionen.se/" className="text-sm blue-link">Link to website</Link>
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">Webmaster @ Datateknologsektionen</h2>
                         <p className="text-sm font-bold">
                             Worked: April 2023 - June 2024
@@ -335,8 +343,8 @@ export default function Page() {
                             Technologies: React, Gatsby, Django, Docker, Nginx, Wordpress, Cloudflare CDN
                         </p>
                         <Link href="https://d-sektionen.se/" className="text-sm blue-link">Link to website</Link>
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">ElWerk @ D-LAN</h2>
                         <p className="text-sm font-bold">
                             Worked: October 2022 - June 2023
@@ -346,8 +354,8 @@ export default function Page() {
                             Also took care of logistics at the event.
                         </p>
                         <Link href="https://d-lan.se/" className="text-sm blue-link">Link to website</Link> 
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">Chef & Bartender @ VilleValla Pub</h2>
                         <p className="text-sm font-bold">
                             Worked: March 2024 - Present
@@ -355,14 +363,17 @@ export default function Page() {
                         <p className="text-sm">
                             Started in the kitchen at VilleValla Pub, a student pub in Linköping.
                             Wanted to try something new and decided to start at VilleValla.
-                            Works both in the kitchen and as a bartender.
+                            After a while I also started to work as a bartender.
                         </p>
                         <Link href="https://www.villevallapub.se/" className="text-sm blue-link">Link to website</Link>
-                    </div>
-                </div>
-                <div className="my-4">
-                    <h1 className="font-bold">Education</h1>
-                    <div className="pl-4 my-2">
+                    </Card>
+                </CardGrid>
+            </div>
+            <div className="my-4">
+                <h1 className="font-bold">Education</h1>
+                <hr />
+                <CardGrid>
+                    <Card>
                         <h2 className="font-bold">Master of Science in Computer Science and Engineering @ Linköping University</h2>
                         <p className="text-sm font-bold">
                             2021 - Present
@@ -371,8 +382,8 @@ export default function Page() {
                             Currently studying my {getStudyYear()} year of the program.
                         </p>
                         <Link href="https://liu.se/en/education/program/6cddd" className="text-sm blue-link">Link to program</Link>
-                    </div>
-                    <div className="pl-4 my-2">
+                    </Card>
+                    <Card>
                         <h2 className="font-bold">Teknikprogrammet, inriktning informations- och medieteknik @ Oscarsgymnasiet</h2>
                         <p className="text-sm font-bold">
                             2018 - 2021
@@ -382,18 +393,19 @@ export default function Page() {
                             Took extra courses in welding, CAD, and electricity.
                         </p>
                         <Link href="https://www.oskarshamn.se/forskola-och-utbildning/oscarsgymnasiet/program/teknikprogrammet/" className="text-sm blue-link">Link to program</Link>
-                    </div>
-                </div>
-                <div className="my-4">
-                    <h1 className="font-bold">Spoken languages</h1>
-                    <div className="pl-4 my-2">
-                        <h2 className="font-bold">Swedish: Native</h2>
-                        <h2 className="font-bold">English: Fluent</h2>
-                        <h2 className="font-bold">German: Basic</h2>
-                    </div>
+                    </Card>
+                </CardGrid>
+            </div>
+            <div className="my-4">
+                <h1 className="font-bold">Spoken languages</h1>
+                <div className="pl-4 my-2">
+                    <h2 className="font-bold">Swedish: Native</h2>
+                    <h2 className="font-bold">English: Fluent</h2>
+                    <h2 className="font-bold">German: Basic</h2>
                 </div>
             </div>
-            <Footer/>
-        </main>
+        </div>
+        <Footer/>
+    </main>
     )
 }
