@@ -258,7 +258,7 @@ export default function Page() {
                             Worked: June 2024 - July 2024
                         </p>
                         <p className="text-sm">
-                        Team leader of a 5 group team at <span lang='sv' className="italic-text">Digitaliseringsavdelningen</span>, within the <span lang='sv' className="italic-text">Digitala resursenheten</span> team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I was responsible for the team and the work we did. I also had to report to the project manager and make sure everything was done correctly.
+                        Team leader of a 4 group team at <span lang='sv' className="italic-text">Digitaliseringsavdelningen</span>, within the <span lang='sv' className="italic-text">Digitala resursenheten</span> team. The work involves installing and maintaining computers in various halls across all campuses of Linköping University. I was responsible for the team and the work we did. I also had to report to the project manager and make sure everything was done correctly.
                         </p>
                     </Card>
                     <Card>
