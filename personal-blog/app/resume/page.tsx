@@ -81,6 +81,16 @@ export default function Page() {
             darkImage: "https://skillicons.dev/icons?i=cpp&theme=dark"
         },
         {
+            name: "SQL",
+            image: "https://skillicons.dev/icons?i=postgres&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=postgres&theme=dark"
+        },
+        {
+            name: "Matlab",
+            image: "https://skillicons.dev/icons?i=matlab&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=matlab&theme=dark"
+        },
+        {
             name: "VHDL"
         },
     ]
@@ -168,6 +178,11 @@ export default function Page() {
             name: "Linux",
             image: "https://skillicons.dev/icons?i=linux&theme=light",
             darkImage: "https://skillicons.dev/icons?i=linux&theme=dark"
+        },
+        {
+            name: "Windows",
+            image: "https://skillicons.dev/icons?i=windows&theme=light",
+            darkImage: "https://skillicons.dev/icons?i=windows&theme=dark"
         }
     ]
 
